@@ -1,0 +1,84 @@
+<h1>Skate Park</h1>
+
+
+    <h2>Registro</h2>
+    <hr class="w-50" />
+
+    <form id="form-register" method="POST" class="formulario" enctype="multipart/form-data">
+      
+        <!-- Grupo: Correo Electronico -->
+        <div class="formulario__grupo" id="grupo__correo">
+          <label for="correo" class="formulario__label">Correo Electrónico</label>
+          <div class="formulario__grupo-input">
+            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion
+            bajo.</p>
+        </div>
+
+
+        <!-- Grupo: Nombre -->
+        <div class="formulario__grupo" id="grupo__nombre">
+          <label for="nombre" class="formulario__label">Nombre Usuario</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John_Doe" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener letras, guion y guion bajo - No permite acentos.</p>
+        </div>
+
+        <!-- Grupo: Contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+          <label for="password" class="formulario__label">Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password" id="password" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+        </div>
+
+        <!-- Grupo: Contraseña 2 -->
+        <div class="formulario__grupo" id="grupo__password2">
+          <label for="password2" class="formulario__label">Repetir Contraseña</label>
+          <div class="formulario__grupo-input">
+            <input type="password" class="formulario__input" name="password2" id="password2" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+        </div>
+
+        <!-- Grupo: años de experiencia-->
+        <div class="formulario__grupo" id="grupo__experiencia">
+          <label for="experiencia" class="formulario__label">Años de experiencia</label>
+          <div class="formulario__grupo-input">
+            <input type="number" class="formulario__input" name="experiencia" id="experiencia" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">Años de experiencia solo debe contener números.</p>
+        </div>
+
+        <!-- Grupo: especialidad -->
+        <div class="formulario__grupo" id="grupo__especialidad">
+          <label for="especialidad" class="formulario__label">Especialidad</label>
+          <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="especialidad" id="especialidad" placeholder="Kickflip" required>
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La especialidad solo puede contener letras y no debe superar 16 caracteres.</p>
+        </div>
+
+        <div class="formulario__grupo" id="grupo__foto">
+          <label for="foto" class="formulario__label">Foto de perfil</label>
+          <input type="file" name="foto" id="foto" accept=".jpg,.png" required onchange/>
+        </div>
+
+      <div>
+        <button type="submit" class="formulario__btn">Registrarme</button>
+      <button type="button" class="formulario__btn"><a href="http://localhost:8080/signin"> Iniciar sesión</a></button>
+      </div>
+      
+
+    </form>
+
+<script src="/assets/js/signUp.js"></script>

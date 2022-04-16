@@ -1,0 +1,73 @@
+<h1>Skate Park</h1>
+
+<div class="py-4">
+  <h2>Datos del perfil</h2>
+  <hr class="w-50" />
+
+  <form method="PUT" id="formulario_datos_participante">
+
+    <div style="background-image: url()" class="formulario">
+
+      <!-- Grupo: Correo Electronico -->
+      <div id="grupo__correo" class="formulario__grupo">
+        <label for="correo" class="formulario__label">Correo Electrónico</label>
+        <div class="formulario__grupo-input">
+          <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com" disabled>
+        </div>
+      </div>
+
+      <!-- Grupo: Nombre -->
+      <div id="grupo__nombre" class="formulario__grupo">
+        <label for="nombre" class="formulario__label">Nombre Usuario</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John_Doe">
+        </div>
+      </div>
+
+
+      <!-- Grupo: Contraseña -->
+      <div id="grupo__password" class="formulario__grupo">
+        <label for="password" class="formulario__label">Contraseña</label>
+        <div class="formulario__grupo-input">
+          <input type="password" class="formulario__input" name="password" id="password">
+        </div>
+      </div>
+
+      <!-- Grupo: Contraseña 2 -->
+      <div id="grupo__password2" class="formulario__grupo">
+        <label for="password2" class="formulario__label">Repetir Contraseña</label>
+        <div class="formulario__grupo-input">
+          <input type="password" class="formulario__input" name="password2" id="password2">
+        </div>
+      </div>
+
+      <!-- Grupo: años de experiencia-->
+      <div id="grupo__experiencia" class="formulario__grupo">
+        <label for="experiencia" class="formulario__label">Años de experiencia</label>
+        <div class="formulario__grupo-input">
+          <input type="number" class="formulario__input" name="experiencia" id="experiencia">
+        </div>
+      </div>
+
+
+      <!-- Grupo: especialidad -->
+      <div id="grupo__especialidad" class="formulario__grupo">
+        <label for="especialidad" class="formulario__label">Especialidad</label>
+        <div class="formulario__grupo-input">
+          <input type="text" class="formulario__input" name="especialidad" id="especialidad" placeholder="Kickflip">
+        </div>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="d-flex justify-content-center mt-4">
+      <button  id="actualizar" class="formulario__btn mx-4">Actualizar</button>
+      <button id="eliminar" class="formulario__btn mx-4">Eliminar cuenta</button>
+    </div>
+
+  </form>
+</div>
+
+
+<script src="/assets/js/dashboard.js"></script>
